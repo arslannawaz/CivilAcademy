@@ -114,7 +114,6 @@ class AuthController extends UserController
     {
         //Mail::to($data->email)->send(new SendMail($data));
         //return view('email',compact('request'));
-
         $mailheader = "MIME-Version: 1.0" . "\r\n";
         $mailheader .= "From: ".$request->email."\r\n";
         $mailheader .= "Reply-To: ".$request->email."\r\n";
